@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: miniproject-spring-xml
+    env: docker
+    plan: free
+    branch: main
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+    buildCommand: ""  # Docker builds it
+    startCommand: ""  # Tomcat runs by default
